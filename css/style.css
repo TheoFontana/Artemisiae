@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    cursor: url(/images/cursor.svg) 15 15 ,auto ;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+}
+/* ---------HERO SECTION--------- */
+
+.hero{
+    position: relative;
+    height: 100vh;
+
+}
+
+header{
+    padding: 1% 5%;
+    display:flex ;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header a{
+    text-decoration: none;
+    color: #000000;
+}
+header a:hover{
+    cursor: url(/images/cursor_pointer.svg) 15 15,auto;  
+}
+
+.nav{
+    list-style: none;
+    display: flex;
+    justify-content:flex-end;
+}
+
+.nav li{
+    text-decoration: none;
+    padding-left: 30%;
+}
+.hero-main{
+    position: relative;
+    
+}
+
+#main-art{
+    position: absolute;
+    height: 60vh;
+    z-index: 2;
+    margin : 7% 0 0 5%;
+
+
+}
+#title-bg{
+    position: absolute;
+    z-index: 1;
+    min-height: 50vh;
+    min-width: 60vw;
+    right: 5%;
+    top:3vw;
+}
+
+.title-text{
+    height:30vw;
+    position: absolute;
+    z-index: 3;
+    color: #ffffff;
+    min-width: 50vw;
+    right: 12%;
+    margin-top:10%
+}
+
+.hero h1{
+    font-size: 7vw;
+    font-weight: 400;
+    text-align: right;
+
+}
+.hero h2{
+    font-size: 4vw;
+    font-weight: 200;
+}
+.hero h3{
+    font-weight: 200;
+    font-size: 1.5vw;
+    text-align: right;   
+}
+
+#scroll{
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: 5s  infinite hint;
+}
+@keyframes hint { 
+    0% {bottom: 5%; opacity: 0.3; } 
+    20%{ bottom: 2%; opacity: 1; }  
+    30%{bottom: 0%; opacity: 0;}
+    100%{bottom: 5%; opacity: 0;}
+}
+
+
+/* ---------WORK SECTION--------- */
+
+.description{
+    position: absolute;
+    padding: 1% 2%;
+    background-color: #ccd5ae;
+    width: 20%;
+    border-radius: 20px;
+    opacity: 0.1;
+}
+.description .artist-name{
+    font-size: 1.2em;
+    color:#ffffff ;
+    padding-bottom: 1%;
+}
+.description .art-title{
+    font-size: 1.2em;
+    color:#ffffff ;
+    padding-bottom: 7%;
+}
+
+.description .art-description{
+    text-align: justify;
+    font-size: 0.9em;
+    color: #D4A373;
+}
+.work img{
+    max-width: 80%;
+}
+
+.work{
+    text-align: center;
+    padding: 2% 2%;
+}
+.art{
+    display: flex;
+    justify-content: space-between;
+}
+.art-col{
+    width: 30%;
+    height: 150vw;
+
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
